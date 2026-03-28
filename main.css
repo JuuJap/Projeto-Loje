@@ -1,0 +1,375 @@
+/* bordinha escura*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
+
+/* Container principal*/
+.container {
+  min-height: 100vh;         
+  margin: 20px;               
+  background-color: #ffffff;
+  border-radius: 20px;         
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Área onde ficarão os "produtos" */
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px; /* espaço entre os itens */
+  margin-top: 20px;
+}
+
+/* Cada caixinha (produto) */
+.card {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Imagem dentro do card */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Nome do produto */
+.card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* Logo / título */
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Área dos botões */
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+/* Botões */
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* Hover bonito */
+.nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Formulário */
+.formulario {
+  margin-top: 20px;
+}
+
+/* Fieldset estilizado */
+fieldset {
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Inputs, select e textarea */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Botões */
+input[type="button"],
+input[type="reset"] {
+  width: auto;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background-color: #555;
+}
+
+/* Caixa da página de info */
+.info-box {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+/* Títulos internos */
+.info-box h2 {
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Texto */
+.info-box p {
+  margin-top: 8px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Lista */
+.info-box ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.info-box li {
+  margin-bottom: 5px;
+}
+
+/* Botão */
+#toggleTema {
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toggleTema:hover {
+  background-color: #ddd;
+}
+
+/*  MODO ESCURO */
+body.dark {
+  background-color: #121212;
+}
+
+/* TEXTO GERAL NO DARK MODE */
+body.dark {
+  color: #ffffff;
+}
+
+/* HEADER */
+body.dark .header {
+  background-color: #2a2a2a;
+}
+
+body.dark .nav a {
+  color: #ffffff;
+}
+
+body.dark .nav a:hover {
+  background-color: #3a3a3a;
+}
+
+/* LOGO */
+body.dark .logo {
+  color: #ffffff;
+}
+
+/* CARDS */
+body.dark .card {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* FORM / INFO */
+body.dark .info-box,
+body.dark fieldset {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+/* INPUTS */
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body.dark .container {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark .header {
+  background-color: #2a2a2a;
+}
+
+body.dark .card {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+body.dark .info-box,
+body.dark fieldset {
+  background-color: #2a2a2a;
+}
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* Logo com imagem + texto */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Imagem da logo */
+.logo img {
+  width: 40px;   /* tamanho da logo */
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px; /* opcional (fica moderno) */
+}
+
+/* HEADER MODERNA */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+/* MENU */
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+/* LINKS */
+.nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* HOVER BONITO */
+.nav a:hover {
+  background-color: #e0e0e0;
+}
+
+/* BOTÃO TEMA */
+#toggleTema {
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toggleTema:hover {
+  background-color: #d5d5d5;
+}
+
+.header {
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+}
+
+/* FORÇA TEXTO CLARO NA INFO */
+body.dark .info-box,
+body.dark .info-box p,
+body.dark .info-box h2,
+body.dark .info-box li {
+  color: #ffffff;
+}
+
+/* Lista de autores */
+.lista-autores {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.lista-autores li {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Hover moderno */
+.lista-autores li:hover {
+    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.1);
+}
