@@ -373,3 +373,74 @@ body.dark .info-box li {
     transform: scale(1.03);
     background: rgba(255, 255, 255, 0.1);
 }
+
+
+@media (max-width: 768px) {
+
+    /* Container ocupa melhor a tela */
+    .container {
+        padding: 15px;
+    }
+
+    /* HEADER fica em coluna */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    /* Navegação */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav a {
+        display: block;
+        padding: 10px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+    }
+
+    /* GRID vira 1 coluna */
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cards menores */
+    .card {
+        width: 100%;
+    }
+
+    /* Imagens ajustadas */
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Títulos menores */
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    /* Formulário */
+    input, textarea, select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Botão tema */
+    #toggleTema {
+        width: 100%;
+    }
+}
+/*adaptar automaticamente a qualquer tela */
+.grid-produtos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
